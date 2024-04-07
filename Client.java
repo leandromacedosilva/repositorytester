@@ -11,6 +11,10 @@ public class Client {
 		pst.print("NOME: ");
 		String nome = input.nextLine();
 
+		pst.print("INFORME O SOBRENOME: ");
+		String sobrenome = input.nextLine();
+
 		pst.println("NOME INFORMADO: " + nome);
+		pst.println("SOBRENOME: " + sobrenome);
 	}
 }
