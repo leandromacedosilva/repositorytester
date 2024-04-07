@@ -1,4 +1,4 @@
-import java.oi.PrintStream;
+import java.io.PrintStream;
 
 public class Client {
 	public static void main(String[] args) {
