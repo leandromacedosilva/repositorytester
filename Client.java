@@ -2,19 +2,50 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 public class Client {
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
 		PrintStream pst = System.out;
-		Scanner input = new Scanner(System.in);
 
-		pst.println("INFORME OS DADOS DO CLIENTE");
-		
-		pst.print("NOME: ");
-		String nome = input.nextLine();
+		private String nome;
+		private String sobrenome;
+		private String cpf;
 
-		pst.print("INFORME O SOBRENOME: ");
-		String sobrenome = input.nextLine();
+		public Client() {}
 
-		pst.println("NOME INFORMADO: " + nome);
-		pst.println("SOBRENOME: " + sobrenome);
-	}
+		public Client(String nome, String sobrenome, String cpf) {
+			this.nome = nome;
+			this.sobrenome = sobrenome;
+			this.cpf = cpf;
+		}
+
+		public void clientPrinter() {
+			pst.println("INFORMACOES DO CLIENTE");
+			pst.println("NOME: " + this.nome);
+			pst.println("SOBRENOME: " + this.sobrenome);
+			pst.println("CPF: " + this.cpf);
+		}
+
+		public String getNome() {
+			return nome;
+		}
+
+		public void setName(String nome) {
+			this.nome = nome;
+		}
+
+		public String getSobrenome() {
+			return sobrenome;
+		}
+
+		public void setSobrenome(String sobrenome) {
+			this.sobrenome = sobrenome;
+		}
+
+		public String getCpf() {
+			return cpf;
+		}
+
+		public void setCpf(String cpf) {
+			this.cpf = cpf;
+		}
+	//}
 }
